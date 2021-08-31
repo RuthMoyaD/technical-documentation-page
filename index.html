@@ -7,22 +7,90 @@
     <title>Document</title>
 </head>
 <body>
-    <main id="main-doc">
-        <section class="main-section">
+    <nav id="navbar">
+        <header>Reaper User Guide</header>
+        <a class="nav-link" href="#GETTING_STARTED">Getting Started</a>
+        <a class="nav-link" href="#PROJECT_BASIS">Project basis</a>
+        <a class="nav-link" href="#RECORDING_AUDIO">Recording audio</a>
+        <a class="nav-link" href="#MANAGING_TRACKS">Managing tracks</a>
+        <a class="nav-link" href="#USING_LOOPS">Using loops</a>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="GETTING_STARTED">
           <header>Getting Started</header>
+          <p>To pin REAPER to the dock, simply drag and drop the 
+      REAPER icon from the Applications folder on to the Dock. We 
+      strongly recommend that you should also, under System 
+      Preferences, ensure that for your Mouse right click is enabled as a secondary button.</p>
+          <p>If you are installing REAPER for the first time, or if you wish to replace an earlier version of REAPER with 
+      this one, you should accept the default destination folder and not enable portable install. If you wish to install 
+      this alongside an existing earlier version (such as 5.xx), change the default directory (e.g. to \REAPER6) and 
+      enable portable install. This will ensure that your earlier 5.xx settings and preferences will be preserved 
+      separately</p>
+          <code></code>
         </section>
-        <section class="main-section">
+        <section class="main-section" id="PROJECT_BASIS">
           <header>Project basis</header>
+          <p>To open an existing REAPER Project File, use the File, Open Project command, or the keyboard shortcut 
+      Ctrl O. As with other Windows Apps, you will need to navigate to the appropriate folder to find your project. 
+      Recently used projects can more easily be opened using the File, Recent Projects command. This causes a list 
+      of up to the last 100 recently used project files to be displayed. You can then select any file from that list.</p>
+          <p>Notice too the toggle command Continuous scrolling on the Options menu. If disabled (the default), the play 
+      cursor will scroll from left to right during playback. If enabled, this cursor will find and then remain stationary in 
+      the center of the arrange window during playback, while the media items scroll across the screen. </p>
+          <code></code>
         </section>
-        <section class="main-section">
+        <section class="main-section" id="RECORDING_AUDIO">
           <header>Recording audio</header>
+          <p>Use project file as a template. This enables you to use an existing project file as a template for new 
+      projects. All tracks, HX, tracks, buses, routing etc. will be copied into the new file from the template file.</p>
+          <p>Automatically save to a timestamped file at intervals you specify. This can help to protect you 
+      from the consequences of an unforeseen circumstance such as a power outage or a computer crash. You 
+      can save these files to the project directory and/or an additional directory. You can also specify the 
+      frequency (in minutes) of automatic saving, and whether to apply this when not recording, when 
+      stopped, or at any time.</p>
+          <code></code>
         </section>
-        <section class="main-section">
+        <section class="main-section" id="MANAGING_TRACKS">
           <header>Managing tracks</header>
+          <p>REAPER automatically groups your FX in 
+      various ways – by type (VSTi, VST, JS, etc.), 
+      by category (Analyzer, Dynamics, EQ, etc.) 
+      and by developers (e.g. Melda, Voxengo, 
+      Wave Arts). In addition, you can create your 
+      own group folders.
+      FX can be grouped as you wish. For example, 
+      you might wish to create a folder called 
+      Chorus/Delay/Reverb to display these plug-
+      ins together. You can create as many folders 
+      as you wish, and the same plug-in can be 
+      placed in more than one folder.</p>
+          <p>
+          <ul>
+            <li>Add a new folder</li>
+            <li>Add a new smart folder </li>
+            <li>Add FX to a folder</li>
+            <li>Display folder contents</li>
+            <li>Add FX to track or item</li>
+          </ul>
+          </p>
+          <code></code>
         </section>
-        <section class="main-section">
+        <section class="main-section" id="USING_LOOPS">
           <header>Using loops</header>
+          <p>Any audio, MIDI or click source Item can be 
+      looped. Indeed, by default REAPER media 
+      items are loop enabled. You can disable this 
+      for individual items in the Media Item 
+      Properties dialog box, or globally (for MIDI 
+      and imported items) on the Project, Media 
+      Item Defaults page of your Preferences.</p>
+          <p>The loop point is defined by the duration of the source media. If you insert an item that is four bars long, it will 
+      loop every 4 bars, if it is 8 bars, it will loop every 8 bars, etc. Note that in the following examples, if you are 
+      using beats for your timebase, the item must be an exact number of beats in length, or it will not loop in sync. If 
+      necessary, adjust the playback rate (Media Properties) while preserving pitch, then glue the item to do this.</p>
+          <code></code>
         </section>
-    </main>
+      </main>
 </body>
 </html>
